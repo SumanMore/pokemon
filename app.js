@@ -53,13 +53,21 @@ function createPokemonCard(pokemon) {
         <div class = "info">
             <span class = "number">#${pokemon.id.toString().padStart(3, '0')}</span>
             <h3 class = "name"><span class="change1">${name}</span></h3>
-            <small class = "type">Type: <span>${type}</span></small>
+            <small class = "type">Type: <span><b>${type}<b></span></small>
+            <br>
+            <p><b>Click here to know more</b></p>
         </div>
     `;
     const mbody = document.querySelector('.modal-body')
-    mbody.innerHTML = `Name: ${pokemon.name}<br>Weight: ${pokemon.weight}<br>
+    mbody.innerHTML =
+        `<div class="details">
+        <p > <span class="change1">${pokemon.name} details</span> </p>
+    Name: ${pokemon.name}<br>Weight: ${pokemon.weight}<br>
     Height: ${pokemon.height}<br>Move: ${pokemon.moves[0].move.name},${pokemon.moves[1].move.name}, ${pokemon.moves[2].move.name}, ${pokemon.moves[3].move.name},${pokemon.moves[4].move.name}, ${pokemon.moves[5].move.name}<br>
-    Type: ${type}`
+    Type: ${type}
+    </div>
+    `
+
 
     pokemonEl.innerHTML = pokeInnerHTML;
 }

@@ -24,9 +24,9 @@ particlesJS('particles-js',
                     "nb_sides": 5
                 },
                 "image": {
-                    "src": "pikachu.jpg",
-                    "width": 100,
-                    "height": 100
+                    "src": "pikachu.png",
+                    "width": 300,
+                    "height": 300
                 }
             },
             "opacity": {
@@ -45,7 +45,7 @@ particlesJS('particles-js',
                 "anim": {
                     "enable": false,
                     "speed": 70, /*change*/
-                    "size_min": 10, /*change*/
+                    "size_min": 40, /*change*/
                     "sync": false
                 }
             },
